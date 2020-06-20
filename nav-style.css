@@ -85,17 +85,20 @@ a:hover::before {
 
 
 /* Mobile Style Start */
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
 
     ul {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        grid-gap: 3rem;
+        grid-gap: 1rem;
         justify-content: center;
         justify-items: center;
     }
     
     .full-width {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 1rem;
         grid-column: 1 / 6;
         justify-content: center;
         justify-items: center;
