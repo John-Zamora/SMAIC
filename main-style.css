@@ -43,7 +43,7 @@ main {
 
 .double-section {
     display: grid;
-    grid-template-columns: 100vw;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     grid-template-rows: auto;
 }
 
