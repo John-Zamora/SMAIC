@@ -24,51 +24,53 @@ body {
 /* CSS Reset End */
 
 
+/* Global Styles Start */
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* Global Styles End */
 
 
-
-
-
-/* Desktop Style Start */
+/* Mobile Styles Start */
 main {
     display: grid;
     grid-template-columns: 100vw;
     grid-template-rows: auto auto auto;
     grid-row-gap: 1rem;
+    justify-content: center;
 }
 
 .double-section {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: 100vw;
     grid-template-rows: auto;
-    grid-column-gap: 1rem;
 }
 
 .triple-section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
-    grid-column-gap: 1rem;
+    grid-column: 1 / 4;
     justify-content: center;
     justify-items: center;
 }
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-/* Desktop Style End */
+/* Mobile Styles End */
 
 
-/* Mobile Style Start */
-@media screen and (max-width: 600px) {
-
+/* Desktop Style Start */
+@media (min-width: 600px) {
     .double-section {
-        display: grid;
-        grid-template-columns: 100vw;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        grid-column-gap: 1rem;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .triple-section {
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto;
         grid-column-gap: 1rem;
     }
-    
 }
-/* Mobile Style end */
+/* Desktop Style End */
