@@ -90,18 +90,13 @@ a:hover::before {
     ul {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        grid-gap: 1rem;
+        grid-gap: 3rem;
         justify-content: center;
         justify-items: center;
     }
     
     .full-width {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-gap: 1rem;
         grid-column: 1 / 6;
-        justify-content: center;
-        justify-items: center;
     }
 
 }
