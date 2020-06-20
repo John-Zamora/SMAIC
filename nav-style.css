@@ -85,7 +85,7 @@ a:hover::before {
 
 
 /* Mobile Style Start */
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
 
     ul {
         display: grid;
@@ -98,6 +98,8 @@ a:hover::before {
     .full-width {
         display: grid;
         grid-column: 1 / 6;
+        justify-content: center;
+        justify-items: center;
     }
 
 }
