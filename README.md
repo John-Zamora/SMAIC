@@ -1,7 +1,7 @@
 # SMAIC
 > Repository for the development of SMAIC's website.  
+_Last updated 06-23-2020_  
 
-_Last updated 06-23-2020_
 ---
 
 ## HTML
@@ -12,33 +12,33 @@ The contents include:
 2.  The admissions page
 3.  The student life page
 4.  The about page \(our vision\)
-5.  The contact page
+5.  The contact page  
 
 Under those five sub-headings, the following topics will be discussed:
 - Structure
 - Classes and IDs
-- Other things to note
+- Other things to note  
 
 
 ### Home
 #### Structure
 #### Classes and IDs
-#### Others
+#### Others  
 
 ### Admissions
 #### Structure
 #### Classes and IDs
-#### Others
+#### Others  
 
 ### Student Life
 #### Structure
 #### Classes and IDs
-#### Others
+#### Others  
 
 ### Our Vision
 #### Structure
 #### Classes and IDs
-#### Others
+#### Others  
 
 ### Contact
 #### Structure
