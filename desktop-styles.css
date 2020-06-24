@@ -4,6 +4,7 @@
         display: grid;
         grid-template-columns: 1fr repeat(5, fit-content(7.5rem));
         justify-items: end;
+        align-items: center;
         grid-gap: 2rem;
     }
 
