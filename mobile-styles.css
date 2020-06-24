@@ -14,12 +14,34 @@ body {
     background-color: var(--color-five);
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
-
-img {
-    max-width: 100%;
-    height: auto;
-}
 /* Global Styles End */
+
+
+/* Filler shapes Start */
+#main-picture {
+    width: 7fr;
+    height: 30rem;
+    background: var(--color-two);
+}
+
+#main-picture-description {
+    width: 5fr;
+    height: 20rem;
+    background: var(--color-three);
+}
+
+#announcements {
+    width: 6fr;
+    height: 20rem;
+    background: var(--color-three);
+}
+
+#news {
+    width: 6fr;
+    height: 20rem;
+    background: var(--color-two);
+}
+/* Filler shapes End */
 
 
 /* CSS Reset Start */
@@ -42,9 +64,8 @@ body {
 
 /* Navigation Bar Start */
 nav {
-    padding: 1rem;
+    padding: 1.5rem;
     max-width: 100%;
-    margin-left: -2vw;
 }
 
 ul {

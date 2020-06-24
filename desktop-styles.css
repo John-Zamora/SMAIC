@@ -1,5 +1,5 @@
 /* Navigation Bar Start */
-@media (min-width: 600px) {
+@media (min-width: 800px) {
     ul {
         display: grid;
         grid-template-columns: 1fr repeat(5, fit-content(7.5rem));
@@ -18,7 +18,7 @@
 
 
 /* Main Start */
-@media (min-width: 600px) {
+@media (min-width: 800px) {
     .container-one {
         display: grid;
         grid-template-columns: 7fr 5fr;
