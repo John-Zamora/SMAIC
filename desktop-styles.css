@@ -14,7 +14,7 @@
 /* Navigation Styles End */
 
 
-/* Main Styles Start */
+/* Home Main Styles Start */
 @media (min-width: 650px) {
     .home-intro {
         grid-template-columns: 7fr 5fr;
@@ -77,4 +77,11 @@
         display: none;
     }
 }
-/* Main Styles End */
+/* Home Main Styles End */
+
+
+/* About Main Styles Start */
+@media (min-width: 650px) {
+    
+}
+/* About Main Styles End */
