@@ -59,6 +59,8 @@ Under those five sub-headings, the following topics will be discussed:
 - A separate CSS file is used for the desktop styles
 - The desktop styles are activated through the use of media queries
 - The minimum device width to trigger the use of the desktop style is currently 600px
+- Note that the resizing the browser width to that certain point will also trigger the mobile style
+
 
 ---
 
