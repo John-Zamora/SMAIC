@@ -51,6 +51,7 @@ ul {
     list-style-type: none;
     align-items: center;
     text-align: center;
+    font-size: 90%;
 }
 
 #logo {
@@ -230,5 +231,6 @@ footer {
     padding: 1rem;
     justify-items: center;
     color: var(--color-four);
+    font-size: 80%;
 }
 /* Footer End */
