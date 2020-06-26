@@ -92,21 +92,22 @@
     }
 
 
-    .about-nav {
+    .about-nav-container {
         grid-area: nav;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-row-gap: 1rem;
+
+        align-content: start;
         justify-self: stretch;
     }
-    #about-who-nav {
+    #about-nav-links {
         width: 100%;
-        height: 3rem;
+        height: 10rem;
         background: var(--color-two);
         justify-self: stretch;
-    }
-    #about-what-nav {
-        width: 100%;
-        height: 3rem;
-        background: var(--color-three);
-        justify-self: stretch;
+        position: fixed;
     }
 
 

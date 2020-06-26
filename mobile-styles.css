@@ -150,17 +150,15 @@ a:hover {
 }
 
 
-.about-nav {
+.about-nav-container {
     grid-area: nav;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    
     justify-self: center;
 }
-#about-who-nav {
-    width: 80vw;
-    height: 2rem;
-    background: var(--color-two);
-    justify-self: center;
-}
-#about-what-nav {
+#about-nav-links {
     width: 80vw;
     height: 2rem;
     background: var(--color-two);
