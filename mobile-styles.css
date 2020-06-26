@@ -77,7 +77,7 @@ a:hover {
 
 
 /* Home Main Styles Start */
-main {
+#home-main {
     display: grid;
     grid-template-columns: 100vw;
     grid-template-rows: auto auto auto;
@@ -138,32 +138,40 @@ main {
 
 
 /* About Main Styles Start */
-main {
+
+#about-main {
     display: grid;
+    grid-template-areas:
+        "nav"
+        "content";
     grid-template-columns: 100vw;
-    grid-template-rows: auto auto auto auto;
-}
-
-
-h1 {
-    text-align: center;
+    grid-template-rows: auto auto;
+    grid-row-gap: 1rem;
 }
 
 
 .about-nav {
-    display: grid;
-    grid-template-columns: 100vw;
-    grid-template-rows: auto;
-    justify-content: center;
+    grid-area: nav;
+    justify-self: center;
 }
 #about-who-nav {
     width: 80vw;
-    height: 5rem;
+    height: 2rem;
     background: var(--color-two);
     justify-self: center;
 }
 #about-what-nav {
-    display: none;
+    width: 80vw;
+    height: 2rem;
+    background: var(--color-two);
+    justify-self: center;
+}
+
+
+.about-content {
+    grid-area: content;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
 }
 
 
@@ -229,7 +237,9 @@ footer {
     grid-template-columns: 100%;
     grid-template-rows: auto;
     padding: 1rem;
+
     justify-items: center;
+    align-items: center;
     color: var(--color-four);
     font-size: 80%;
 }
