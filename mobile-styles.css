@@ -139,23 +139,23 @@ a:hover {
 
 /* About Main Styles Start */
 
-#about-main {
+.about-main {
     display: grid;
     grid-template-areas:
         "nav"
         "content";
     grid-template-columns: 100vw;
     grid-template-rows: auto auto;
-    grid-row-gap: 1rem;
+    grid-gap: 1rem;
 }
 
 
 .about-nav-container {
-    grid-area: nav;
+    grid-area: "nav";
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto;
-    
+
     justify-self: center;
 }
 #about-nav-links {
@@ -167,19 +167,14 @@ a:hover {
 
 
 .about-content {
-    grid-area: content;
-    grid-template-columns: 100%;
-    grid-template-rows: auto auto;
-}
-
-
-.about-who {
+    grid-area: "content";
     display: grid;
     grid-template-columns: 100vw;
     grid-template-rows: auto auto auto;
     grid-row-gap: 1rem;
-    justify-content: center;
 }
+
+
 #about-who-text-one {
     width: 100vw;
     height: 40rem;
@@ -200,13 +195,7 @@ a:hover {
 }
 
 
-.about-what {
-    display: none;
-    grid-template-columns: 100vw;
-    grid-template-rows: auto auto auto;
-    grid-row-gap: 1rem;
-    justify-content: center;
-}
+
 #about-what-text-one {
     width: 100vw;
     height: 40rem;
@@ -227,6 +216,260 @@ a:hover {
 }
 /* About Main Styles End */
 
+
+/* Programs Main Styles Start */
+.programs-main {
+    display: grid;
+    grid-template-areas:
+        "nav"
+        "content";
+    grid-template-columns: 100vw;
+    grid-template-rows: auto auto;
+    grid-row-gap: 1rem;
+}
+
+
+.programs-nav-container {
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+
+    justify-self: center;
+}
+#programs-nav-links {
+    width: 80vw;
+    height: 2rem;
+    background: var(--color-two);
+    justify-self: center;
+}
+
+
+.programs-content {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: auto auto auto;
+    grid-row-gap: 1rem;
+}
+
+
+#programs-early-text-one {
+    width: 100vw;
+    height: 40rem;
+    background: var(--color-three);
+    justify-self: center;
+}
+#programs-early-widgets {
+    width: 100vw;
+    height: 20rem;
+    background: var(--color-two);
+    justify-self: center;
+}
+#programs-early-text-two {
+    width: 100vw;
+    height: 40rem;
+    background: var(--color-three);
+    justify-self: center;
+}
+
+
+#programs-elementary-text-one {
+    width: 100vw;
+    height: 40rem;
+    background: var(--color-three);
+    justify-self: center;
+}
+#programs-elementary-widgets {
+    width: 100vw;
+    height: 20rem;
+    background: var(--color-two);
+    justify-self: center;
+}
+#programs-elementary-text-two {
+    width: 100vw;
+    height: 40rem;
+    background: var(--color-three);
+    justify-self: center;
+}
+
+
+#programs-hs-text-one {
+    width: 100vw;
+    height: 40rem;
+    background: var(--color-three);
+    justify-self: center;
+}
+#programs-hs-widgets {
+    width: 100vw;
+    height: 20rem;
+    background: var(--color-two);
+    justify-self: center;
+}
+#programs-hs-text-two {
+    width: 100vw;
+    height: 40rem;
+    background: var(--color-three);
+    justify-self: center;
+}
+
+
+
+#programs-sped-text-one {
+    width: 100vw;
+    height: 40rem;
+    background: var(--color-three);
+    justify-self: center;
+}
+#programs-sped-widgets {
+    width: 100vw;
+    height: 20rem;
+    background: var(--color-two);
+    justify-self: center;
+}
+#programs-sped-text-two {
+    width: 100vw;
+    height: 40rem;
+    background: var(--color-three);
+    justify-self: center;
+}
+
+
+#programs-voc-text-one {
+    width: 100vw;
+    height: 40rem;
+    background: var(--color-three);
+    justify-self: center;
+}
+#programs-voc-widgets {
+    width: 100vw;
+    height: 20rem;
+    background: var(--color-two);
+    justify-self: center;
+}
+#programs-voc-text-two {
+    width: 100vw;
+    height: 40rem;
+    background: var(--color-three);
+    justify-self: center;
+}
+/* Programs Main Styles End */
+
+
+/* Admission Main Styles Start */
+.admission-main {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: auto auto auto auto;
+    grid-row-gap: 1rem;
+}
+
+
+.overview-container {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: auto;
+}
+#overview-content {
+    width: 100%;
+    height: 20rem;
+    background: var(--color-two);
+    justify-self: center;
+}
+
+
+.step-one-container {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: auto auto;
+}
+#step-one-requirements {
+    width: 100%;
+    height: 30rem;
+    background: var(--color-three);
+    justify-self: center;
+}
+#step-one-dates {
+    width: 100%;
+    height: 30rem;
+    background: var(--color-two);
+    justify-self: center;
+}
+
+
+.step-two-container {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: auto auto;
+}
+#step-two-pic {
+    width: 100%;
+    height: 30rem;
+    background: var(--color-three);
+    justify-self: center;
+}
+#step-two-details {
+    width: 100%;
+    height: 30rem;
+    background: var(--color-two);
+    justify-self: center;
+}
+
+
+.step-three-container {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: auto;
+}
+#step-three-content {
+    width: 100%;
+    height: 30rem;
+    background: var(--color-three);
+    justify-self: center;
+}
+/* Admission Main Styles End */
+
+
+/* Contact Main Styles Start */
+.contact-main {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: auto auto;
+    grid-row-gap: 1rem;
+}
+
+
+.contact-pic-container {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: auto;
+}
+#contact-pic {
+    width: 100%;
+    height: 30rem;
+    background: var(--color-three);
+    justify-self: center;
+}
+
+
+.contact-information-container {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: auto auto;
+}
+#contact-details {
+    width: 100%;
+    height: 40rem;
+    background: var(--color-two);
+    justify-self: center;
+}
+#socmed-details {
+    width: 100%;
+    height: 40rem;
+    background: var(--color-three);
+    justify-self: center;
+}
+/* Contact Main Styles End */
 
 
 /* Footer Start */
