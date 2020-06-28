@@ -22,12 +22,12 @@
         grid-column-gap: 1rem;
     }
     #home-pic {
-        width: 7fr;
+        width: 100%;
         height: 35rem;
         background: var(--color-two);
     }
     #home-desc {
-        width: 5fr;
+        width: 100%;
         height: 35rem;
         background: var(--color-three);
     }
@@ -39,12 +39,12 @@
         grid-column-gap: 1rem;
     }
     #home-announcements {
-        width: 6fr;
+        width: 100%;
         height: 25rem;
         background: var(--color-three);
     }
     #home-news {
-        width: 6fr;
+        width: 100%;
         height: 25rem;
         background: var(--color-two);
     }
@@ -57,17 +57,17 @@
         grid-column-gap: 1rem;
     }
     #home-school-info {
-        width: 4fr;
+        width: 100%;
         height: 25rem;
         background: var(--color-three)
     }
     #home-programs-info {
-        width: 4fr;
+        width: 100%;
         height: 25rem;
         background: var(--color-two)
     }
     #home-admissions-info {
-        width: 4fr;
+        width: 100%;
         height: 25rem;
         background: var(--color-three)
     }
@@ -92,29 +92,41 @@
     }
 
 
-    .about-nav-container {
-        grid-area: nav;
+    .about-nav {
+        grid-area: "nav";
         display: grid;
-        grid-template-columns: 100%;
+        grid-template-columns: 12fr;
         grid-template-rows: auto;
         grid-row-gap: 1rem;
 
         align-content: start;
         justify-self: stretch;
     }
-    #about-nav-links {
+
+
+    .about-nav-desktop {
+        display: grid;
+        grid-template-columns: 12fr;
+        grid-template-rows: auto;
+    }
+    #about-desktop-links {
         width: 100%;
         height: 10rem;
         background: var(--color-two);
-        justify-self: stretch;
+        justify-self: center;
         position: fixed;
+    }
+
+    
+    .about-nav-mobile {
+        display: none;
     }
 
 
     .about-content {
         grid-area: content;
         display: grid;
-        grid-template-columns: 100%;
+        grid-template-columns: 12fr;
         grid-template-rows: auto auto auto;
         grid-row-gap: 1rem;
     }
@@ -138,19 +150,19 @@
 
 
     #about-what-text-one {
-        width: 100vw;
+        width: 100%;
         height: 40rem;
         background: var(--color-three);
         justify-self: center;
     }
     #about-what-pic {
-        width: 100vw;
+        width: 100%;
         height: 20rem;
         background: var(--color-two);
         justify-self: center;
     }
     #about-what-text-two {
-        width: 100vw;
+        width: 100%;
         height: 40rem;
         background: var(--color-three);
         justify-self: center;
@@ -171,17 +183,24 @@
     }
 
 
-    .programs-nav-container {
+    .programs-nav {
         grid-area: nav;
         display: grid;
-        grid-template-columns: 100%;
+        grid-template-columns: 12fr;
         grid-template-rows: auto;
         grid-row-gap: 1rem;
 
         align-content: start;
         justify-self: stretch;
     }
-    #programs-nav-links {
+
+
+    .programs-nav-desktop {
+        display: grid;
+        grid-template-columns: 12fr;
+        grid-template-rows: auto;
+    }
+    #programs-desktop-links {
         width: 100%;
         height: 10rem;
         background: var(--color-two);
@@ -189,6 +208,11 @@
         position: fixed;
     }
 
+
+    .programs-nav-mobile {
+        display: none;
+    }
+    
 
     .programs-content {
         grid-area: content;

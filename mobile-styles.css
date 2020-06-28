@@ -46,10 +46,10 @@ ul {
     grid-template-columns: repeat(5, fit-content(1fr));
     grid-template-rows: auto;
     grid-gap: 1rem;
+
     justify-content: center;
-    
-    list-style-type: none;
     align-items: center;
+    list-style-type: none;
     text-align: center;
     font-size: 90%;
 }
@@ -62,9 +62,7 @@ ul {
 a {
     color: var(--color-four);
     text-decoration: none;
-
     position: relative;
-    text-decoration: none;
 }
 
 a:hover {
@@ -77,25 +75,26 @@ a:hover {
 
 
 /* Home Main Styles Start */
-#home-main {
+.home-main {
     display: grid;
     grid-template-columns: 100vw;
     grid-template-rows: auto auto auto;
     grid-row-gap: 1rem;
 }
 
+
 .home-intro {
     display: grid;
-    grid-template-columns: 100vw;
+    grid-template-columns: 12fr;
     grid-template-rows: auto auto;
 }
 #home-pic {
-    width: 1fr;
+    width: 100%;
     height: 50vh;
     background: var(--color-two);
 }
 #home-desc {
-    width: 1fr;
+    width: 100%;
     height: 50vh;
     background: var(--color-three)
 }
@@ -103,16 +102,17 @@ a:hover {
 
 .home-updates {
     display: grid;
-    grid-template-columns: 100vw;
+    grid-template-columns: 12fr;
+    grid-template-rows: auto auto;
     grid-column-gap: 1rem;
 }
 #home-announcements {
-    width: 1fr;
+    width: 100%;
     height: 50vh;
     background: var(--color-two);
 }
 #home-news {
-    width: 1fr;
+    width: 100%;
     height: 50vh;
     background: var(--color-three)
 }
@@ -120,11 +120,11 @@ a:hover {
 
 .home-info-mobile {
     display: grid;
-    grid-template-columns: 100vw;
+    grid-template-columns: 12fr;
     grid-template-rows: auto;
 }
 #home-carousel {
-    width: 70vw;
+    width: 70%;
     height: 90vh;
     background: var(--color-two);
     justify-self: center;
@@ -138,57 +138,67 @@ a:hover {
 
 
 /* About Main Styles Start */
-
 .about-main {
     display: grid;
     grid-template-areas:
         "nav"
         "content";
-    grid-template-columns: 100vw;
+    grid-template-columns: 12fr;
     grid-template-rows: auto auto;
     grid-gap: 1rem;
 }
 
 
-.about-nav-container {
+.about-nav {
     grid-area: "nav";
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 12fr;
     grid-template-rows: auto;
-
     justify-self: center;
 }
-#about-nav-links {
-    width: 80vw;
+
+
+.about-nav-mobile {
+    display: grid;
+    grid-template-columns: 80vw;
+    grid-template-rows: auto;
+}
+#about-mobile-links {
+    width: 100%;
     height: 2rem;
     background: var(--color-two);
     justify-self: center;
 }
 
 
+.about-nav-desktop {
+    display: none;
+}
+
+
 .about-content {
     grid-area: "content";
     display: grid;
-    grid-template-columns: 100vw;
+    grid-template-columns: 12fr;
     grid-template-rows: auto auto auto;
     grid-row-gap: 1rem;
 }
 
 
 #about-who-text-one {
-    width: 100vw;
+    width: 100%;
     height: 40rem;
     background: var(--color-three);
     justify-self: center;
 }
 #about-who-pic {
-    width: 100vw;
+    width: 100%;
     height: 20rem;
     background: var(--color-two);
     justify-self: center;
 }
 #about-who-text-two {
-    width: 100vw;
+    width: 100%;
     height: 40rem;
     background: var(--color-three);
     justify-self: center;
@@ -197,19 +207,19 @@ a:hover {
 
 
 #about-what-text-one {
-    width: 100vw;
+    width: 100%;
     height: 40rem;
     background: var(--color-three);
     justify-self: center;
 }
 #about-what-pic {
-    width: 100vw;
+    width: 100%;
     height: 20rem;
     background: var(--color-two);
     justify-self: center;
 }
 #about-what-text-two {
-    width: 100vw;
+    width: 100%;
     height: 40rem;
     background: var(--color-three);
     justify-self: center;
@@ -223,25 +233,36 @@ a:hover {
     grid-template-areas:
         "nav"
         "content";
-    grid-template-columns: 100vw;
+    grid-template-columns: 12fr;
     grid-template-rows: auto auto;
     grid-row-gap: 1rem;
 }
 
 
-.programs-nav-container {
+.programs-nav {
     grid-area: nav;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto;
-
     justify-self: center;
 }
-#programs-nav-links {
+
+
+.programs-nav-mobile {
+    display: grid;
+    grid-template-columns: 12fr;
+    grid-template-rows: auto;
+}
+#programs-mobile-links {
     width: 80vw;
     height: 2rem;
     background: var(--color-two);
     justify-self: center;
+}
+
+
+.programs-nav-desktop {
+    display: none;
 }
 
 
@@ -255,19 +276,19 @@ a:hover {
 
 
 #programs-early-text-one {
-    width: 100vw;
+    width: 100%;
     height: 40rem;
     background: var(--color-three);
     justify-self: center;
 }
 #programs-early-widgets {
-    width: 100vw;
+    width: 100%;
     height: 20rem;
     background: var(--color-two);
     justify-self: center;
 }
 #programs-early-text-two {
-    width: 100vw;
+    width: 100%;
     height: 40rem;
     background: var(--color-three);
     justify-self: center;
@@ -275,19 +296,19 @@ a:hover {
 
 
 #programs-elementary-text-one {
-    width: 100vw;
+    width: 100%;
     height: 40rem;
     background: var(--color-three);
     justify-self: center;
 }
 #programs-elementary-widgets {
-    width: 100vw;
+    width: 100%;
     height: 20rem;
     background: var(--color-two);
     justify-self: center;
 }
 #programs-elementary-text-two {
-    width: 100vw;
+    width: 100%;
     height: 40rem;
     background: var(--color-three);
     justify-self: center;
@@ -295,40 +316,39 @@ a:hover {
 
 
 #programs-hs-text-one {
-    width: 100vw;
+    width: 100%;
     height: 40rem;
     background: var(--color-three);
     justify-self: center;
 }
 #programs-hs-widgets {
-    width: 100vw;
+    width: 100%;
     height: 20rem;
     background: var(--color-two);
     justify-self: center;
 }
 #programs-hs-text-two {
-    width: 100vw;
+    width: 100%;
     height: 40rem;
     background: var(--color-three);
     justify-self: center;
 }
 
 
-
 #programs-sped-text-one {
-    width: 100vw;
+    width: 100%;
     height: 40rem;
     background: var(--color-three);
     justify-self: center;
 }
 #programs-sped-widgets {
-    width: 100vw;
+    width: 100%;
     height: 20rem;
     background: var(--color-two);
     justify-self: center;
 }
 #programs-sped-text-two {
-    width: 100vw;
+    width: 100%;
     height: 40rem;
     background: var(--color-three);
     justify-self: center;
@@ -336,19 +356,19 @@ a:hover {
 
 
 #programs-voc-text-one {
-    width: 100vw;
+    width: 100%;
     height: 40rem;
     background: var(--color-three);
     justify-self: center;
 }
 #programs-voc-widgets {
-    width: 100vw;
+    width: 100%;
     height: 20rem;
     background: var(--color-two);
     justify-self: center;
 }
 #programs-voc-text-two {
-    width: 100vw;
+    width: 100%;
     height: 40rem;
     background: var(--color-three);
     justify-self: center;
@@ -367,7 +387,7 @@ a:hover {
 
 .overview-container {
     display: grid;
-    grid-template-columns: 100vw;
+    grid-template-columns: 12fr;
     grid-template-rows: auto;
 }
 #overview-content {
@@ -380,7 +400,7 @@ a:hover {
 
 .step-one-container {
     display: grid;
-    grid-template-columns: 100vw;
+    grid-template-columns: 12fr;
     grid-template-rows: auto auto;
 }
 #step-one-requirements {
@@ -399,7 +419,7 @@ a:hover {
 
 .step-two-container {
     display: grid;
-    grid-template-columns: 100vw;
+    grid-template-columns: 12fr;
     grid-template-rows: auto auto;
 }
 #step-two-pic {
@@ -418,7 +438,7 @@ a:hover {
 
 .step-three-container {
     display: grid;
-    grid-template-columns: 100vw;
+    grid-template-columns: 12fr;
     grid-template-rows: auto;
 }
 #step-three-content {
@@ -441,7 +461,7 @@ a:hover {
 
 .contact-pic-container {
     display: grid;
-    grid-template-columns: 100vw;
+    grid-template-columns: 12fr;
     grid-template-rows: auto;
 }
 #contact-pic {
@@ -454,7 +474,7 @@ a:hover {
 
 .contact-information-container {
     display: grid;
-    grid-template-columns: 100vw;
+    grid-template-columns: 12fr;
     grid-template-rows: auto auto;
 }
 #contact-details {
