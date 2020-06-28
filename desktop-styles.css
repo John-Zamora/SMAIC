@@ -203,7 +203,7 @@
     #programs-desktop-links {
         width: 100%;
         height: 10rem;
-        background: var(--color-two);
+        background: var(--color-three);
         justify-self: stretch;
         position: fixed;
     }
