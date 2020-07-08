@@ -34,7 +34,7 @@ _Last updated 07-08-2020_
 ---
 
 ## HTML
-***As much as possible, code for inclusion. Try to follow ARIA guidelines when possible***  
+***Try to code for inclusion. Follow ARIA guidelines whenever possible.***  
 
 ### Head tag
 **The head tag is made up of five main groups of elements**
